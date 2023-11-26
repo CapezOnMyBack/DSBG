@@ -1,0 +1,30 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# IDE-specific files
+out
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Build output directories
+build/
+bin/
+
+# Gradle files
+.gradle/
+
+# Dependency directories
+!gradle/wrapper/gradle-wrapper.jar
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Java runtime files
+*.class
