@@ -25,9 +25,9 @@ displayName = "Detected setBlock Be Gone" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
+displayURL="https://github.com/CapezOnMyBack/DSBG"
 # A file name (in the root of the mod JAR) containing a logo for display
-#logoFile="dsbg.png" #optional
+logoFile="dsbg.png"
 # A text field displayed in the mod UI
 credits="Big Thanks to Kaupenjoe on Youtube for his tutorials!" #optional
 # A text field displayed in the mod UI
