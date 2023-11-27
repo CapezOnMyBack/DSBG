@@ -13,6 +13,10 @@ out
 build/
 bin/
 
+# Run output directories
+run/
+run-data/
+
 # Gradle files
 .gradle/
 

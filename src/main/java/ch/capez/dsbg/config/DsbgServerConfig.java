@@ -12,7 +12,7 @@ public class DsbgServerConfig {
     static {
         BUILDER.push("Config for -Detected setBlock be gone- Mod");
 
-        SUPPRESS_LOGGING = BUILDER.comment("Should the \"Detected setBlock in a far chunk\" log messages be suppressed")
+        SUPPRESS_LOGGING = BUILDER.comment("Should the \"Detected setBlock in a far chunk\" log messages be suppressed?")
                 .define("Suppress spam", true);
 
         BUILDER.pop();

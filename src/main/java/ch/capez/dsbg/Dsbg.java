@@ -7,6 +7,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.config.ModConfigEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -19,16 +20,20 @@ public class Dsbg {
 
     public Dsbg() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        // Load config
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, DsbgServerConfig.SPEC, "dsbg-server.toml");
 
-        modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::onCommonSetup);
+        modEventBus.addListener(this::onConfigReload);
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> LOGGER.info("DSBG Mod loaded: " + printInitMessage(DsbgServerConfig.SUPPRESS_LOGGING.get())));
+    public void onCommonSetup(FMLCommonSetupEvent event) {
+        LOGGER.info("Loading DSBG...");
+    }
+
+    public void onConfigReload(ModConfigEvent.Reloading event) {
+        LOGGER.info("DSBG Mod loaded: " + printInitMessage(DsbgServerConfig.SUPPRESS_LOGGING.get()));
     }
 
     private String printInitMessage(Boolean state) {
