@@ -1,4 +1,4 @@
-# Tired of having your server console spammed and your log file size increased?
+## Tired of having your server console spammed and your log file size increased?
 
  Say goodbye to this spam message:
 
@@ -10,10 +10,14 @@
 This mod aims to suppress this warning, saving you storage space and decluttering your log files!
  
 
-## How to use:
+### How to use:
 You can choose to enable or disable the suppression in dsbg-server.toml located under
 ```
 /world/serverconfig/
 ```
 
 It is set to suppress by default.
+
+---
+
+© 2023 CapezOnMyBack. All rights reserved.
