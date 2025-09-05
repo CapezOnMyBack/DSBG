@@ -1,7 +1,6 @@
 {
-    "pack": {
-        "description": "dsbg resources",
-        "pack_format": 15
-        ,"forge:server_data_pack_format": 12
-    }
+  "pack": {
+    "description": "${mod_id} resources",
+    "pack_format": 34
+  }
 }
