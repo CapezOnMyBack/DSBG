@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ch.capez.dsbg.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "dsbg.refmap.json",
+  "mixins": [
+    "DsbgWorldGenMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
