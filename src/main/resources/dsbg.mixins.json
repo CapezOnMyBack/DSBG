@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "ch.capez.dsbg.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DsbgWorldGenMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
